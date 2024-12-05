@@ -2,9 +2,21 @@
 <html>
     <head>
         <title>Pildi leht</title>
+        <script>
+            function vajutus(){
+                vastus.innerText=valik1.value;
+            }
+        </script>
     </head>
     <body>
         <h1>Pildi uudistamise leht</h1>
-        <img src="noot.png" />
+        <img src="noot.png" /><br />
+        <select id="valik1" >
+            <option>meeldib</option>
+            <option>armastan</option>
+            <option>ei meeldi</option>
+        </select>
+        <input type="button" onclick="vajutus()" value="saada" />
+        <div id="vastus">vastuse koht</div>
     </body>
 </html>
